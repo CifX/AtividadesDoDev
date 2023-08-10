@@ -1,0 +1,18 @@
+var modelo = []
+var ano = []
+var valorC = []
+var qrCadastro = true
+var continuarC
+var contador = 0
+while (qrCadastro) {
+    modelo[contador] = prompt("Qual o modelo do carro você deseja cadastrar? ")
+    ano[contador] = prompt("Qual o ano do carro? ")
+    valorC[contador] = prompt("Qual o valor do carro?")
+    contador++
+
+    continuarC = prompt("Deseja cadastrar mais algum carro?(1 para sim 2 para não) ")
+    if (continuarC == 2) {
+        qrCadastro = false
+
+    }
+}console.log("Modelos cadastrados:", modelo, "anos cadastrados", ano, "valores cadastrados: ", valorC)
