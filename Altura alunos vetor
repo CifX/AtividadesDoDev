@@ -1,0 +1,16 @@
+var idade  = []
+var altura = []
+var contador = 0
+var mediamenos = 0
+var SomaAltura = 0
+
+for(let i = 0; i < 10; i++){
+    idade[contador] = parseInt(prompt("Insira a idade do aluno: "))
+    altura[contador] = parseInt(prompt("Insira a altura do aluno: "))
+    SomaAltura += altura[contador]
+    contador++
+    if(idade > 13 && altura[i] < (SomaAltura / contador)){
+        mediamenos++
+    }
+    console.log(mediamenos)
+}
