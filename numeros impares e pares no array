@@ -1,0 +1,21 @@
+var numeros = []
+var contador = 0
+var numerospar = []
+var numerosimpar = []
+var contadorpar = 0
+var contadorimpar = 0
+for(let i = 0; i < 10; i++){
+    numeros[contador] = parseInt(prompt("Insira um número: "))
+if(numeros[contador] % 2 == 0){
+    numerospar[contadorpar] = numeros[contador]
+    contadorpar++
+}else{
+    numerosimpar[contadorimpar] = numeros[contador]
+    contadorimpar++
+}
+contador++
+}
+
+console.log("Os números normais são: ", numeros)
+console.log("Os numeros pares são: ", numerospar)
+console.log("Os numeros ímpares são: ", numerosimpar)
