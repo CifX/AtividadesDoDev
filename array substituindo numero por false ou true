@@ -1,0 +1,13 @@
+var array1 = []
+var contador = 0
+
+for(let i = 0; i < 5; i++){
+    array1[contador] = parseInt(prompt("Insira 5 números(positivos ou negativos): "))
+    contador++
+    if(array1[i] < 0){
+        array1[i] = 'false'
+    }else{
+        array1[i] = 'true'
+    }
+    console.log(array1)
+}
