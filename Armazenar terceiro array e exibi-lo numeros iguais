@@ -1,0 +1,26 @@
+var arrayA = []
+var arrayB = []
+var arrayC = []
+var contadorA = 0
+var contadorB = 0
+var contadorC = 0
+
+for (let i = 0; i < 10; i++) {
+    arrayA[contadorA] = parseInt(prompt("Insira 10 numeros para o array A: "))
+    contadorA++
+}
+
+for (let i = 0; i < 10; i++) {
+    arrayB[contadorB] = parseInt(prompt("Insira 10 números para o array B: "))
+    contadorB++
+}
+
+for(let i = 0; i < contadorA; i++){
+    for(let j = 0; j < contadorB; j++){
+        if (arrayA[i] === arrayB[j] && arrayA[i] > 5){
+            arrayC[contadorC] = arrayA[i]
+            contadorC++
+            break;
+        }
+    }
+}
