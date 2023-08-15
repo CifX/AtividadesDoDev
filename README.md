@@ -1,2 +1,2 @@
 # AtividadesDoDev
-Nesse portifólio, documento atividades de lógica de programação!
+Nesse portfólio, documento atividades de lógica de programação!
